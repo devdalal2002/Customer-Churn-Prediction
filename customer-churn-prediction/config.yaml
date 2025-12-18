@@ -1,0 +1,33 @@
+defaults:
+  raw: data/raw/Telco-Customer-Churn.csv
+  interim: data/interim/telco_interim.csv
+  processed: data/processed/telco_clean.csv
+
+models:
+  baseline: models/baseline_model.pkl
+  tuned: models/tuned_model.pkl
+  preprocessor: models/scaler_encoder.pkl
+  pipeline: models/pipeline.pkl
+
+training:
+  random_state: 42
+  test_size: 0.2
+  cv_folds: 5
+
+# Dashboard / app display settings
+id_column: customerID
+display_columns:
+  - tenure
+  - MonthlyCharges
+  - Contract
+
+# Schema and preprocessing settings
+target_column: Churn
+features:
+  numeric: []
+  categorical: []
+imputation:
+  default_numeric: median
+  default_categorical: mode
+  column_imputations:
+    TotalCharges: telco_total_charges
