@@ -2,10 +2,10 @@
 
 [![CI](https://github.com/devdalal2002/Customer-Churn-Prediction/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/devdalal2002/Customer-Churn-Prediction/actions/workflows/ci.yml)
 
-This repository provides a reproducible end-to-end pipeline to preprocess the Telco customer churn dataset, train and evaluate baseline models, and export scored data for dashboards (Streamlit) and Power BI. It also includes explainability via SHAP and basic unit tests.
+This repository provides a reproducible end-to-end pipeline to preprocess customer‑churn datasets (Telco is used as an example), train and evaluate baseline models, and export scored data for dashboards (Streamlit) and Power BI. The code is written generally so you can swap in your own CSV with similar schema; only a few configuration values (id/target column names) are required to run on other domains. It also includes explainability via SHAP and basic unit tests.
 
 ## Quick Summary
-- End-to-end steps: raw CSV → preprocess → feature engineering → train + select models → evaluate → explain (SHAP) → export scored CSV for Power BI
+- End-to-end steps: raw CSV → preprocess → feature engineering → train + select models → evaluate → explain (SHAP) → export scored CSV for Power BI (designed to be dataset‑agnostic; example uses Telco data)
 - Supported models: LogisticRegression (baseline), RandomForest (grid search), XGBoost (optional)
 - Artifacts: `models/pipeline.pkl` (preferred), `models/tuned_model.pkl`, `models/scaler_encoder.pkl`.
 
