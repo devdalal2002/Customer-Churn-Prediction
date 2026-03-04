@@ -1,0 +1,17 @@
+__pycache__/
+.pytest_cache/
+.vscode/
+*.py[cod]
+*.pyo
+*.pyd
+*.ipynb_checkpoints/
+data/raw/
+venv/
+env/
+*.log
+data/interim/
+models/*.pkl
+reports/figures/*.png
+reports/figures/*.csv
+data/processed/*.csv
+**/VS code projects/
