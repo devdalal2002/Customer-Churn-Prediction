@@ -1,5 +1,7 @@
 # Customer Churn Prediction
 
+[![CI](https://github.com/devdalal2002/Customer-Churn-Prediction/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/devdalal2002/Customer-Churn-Prediction/actions/workflows/ci.yml)
+
 This repository provides a reproducible end-to-end pipeline to preprocess the Telco customer churn dataset, train and evaluate baseline models, and export scored data for dashboards (Streamlit) and Power BI. It also includes explainability via SHAP and basic unit tests.
 
 ## Quick Summary
