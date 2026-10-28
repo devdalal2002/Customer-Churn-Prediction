@@ -1,5 +1,7 @@
 # Customer Churn Prediction
 
+[![tests](https://github.com/devdalal2002/Customer-Churn-Prediction/actions/workflows/ci.yml/badge.svg)](https://github.com/devdalal2002/Customer-Churn-Prediction/actions/workflows/ci.yml)
+
 An end-to-end churn pipeline on the Telco Customer Churn dataset. It runs from raw CSV through features, model selection, SHAP explainability and a Streamlit dashboard to a scored export for Power BI.
 
 **Stack:** Python · scikit-learn · XGBoost · SHAP · Streamlit · Power BI · pytest
