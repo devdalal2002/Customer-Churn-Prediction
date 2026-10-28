@@ -89,7 +89,7 @@ Notes:
 - Note: When you run the app with `streamlit run dashboard/streamlit_app.py`, the script will ensure the repository root is added to `sys.path` so `src.*` imports work correctly. Still, it's recommended to run Streamlit from the repository root:
 
 ```pwsh
-cd "D:\VS code projects\customer-churn-prediction"
+cd customer-churn-prediction
 streamlit run dashboard/streamlit_app.py
 ```
 - Upload a CSV with similar features to the training dataset and the dashboard will return churn predictions.
@@ -131,7 +131,4 @@ python -m pytest -q
 ## Where to look next
 - To change model hyperparameters, edit `src/model_training.py`.
 - To update preprocessing or derived features, edit `src/data_preprocessing.py` or `src/feature_engineering.py`.
-- If you want a hosted prediction service, I can add a `src/api.py` using FastAPI and a `Dockerfile` to run the pipeline artifact in a container.
 
----
-If you'd like, I can now add one of the recommended enhancements: `requirements-dev.txt`, scheduled nightly export CI, or a minimal FastAPI service + Dockerfile — tell me which one to implement next.
